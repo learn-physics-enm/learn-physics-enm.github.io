@@ -1,0 +1,98 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-10/Overview",
+              "path": "/docs/Unit-10/Overview",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-11/Overview",
+              "path": "/docs/Unit-11/Overview",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-12/Overview",
+              "path": "/docs/Unit-12/Overview",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-13/Overview",
+              "path": "/docs/Unit-13/Overview",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-8/8.1-coulomb",
+              "path": "/docs/Unit-8/8.1-coulomb",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-8/Overview",
+              "path": "/docs/Unit-8/Overview",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "Unit-9/Overview",
+              "path": "/docs/Unit-9/Overview",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "/category/unit-8---electric-charges-fields-and-gausss-law",
+              "path": "/docs/category/unit-8---electric-charges-fields-and-gausss-law",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "/category/unit-9---electric-potential",
+              "path": "/docs/category/unit-9---electric-potential",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "/category/unit-10---conductors-and-capacitors",
+              "path": "/docs/category/unit-10---conductors-and-capacitors",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "/category/unit-11---electric-circuits",
+              "path": "/docs/category/unit-11---electric-circuits",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "/category/unit-12---magnetic-fields-and-electromagnetism",
+              "path": "/docs/category/unit-12---magnetic-fields-and-electromagnetism",
+              "sidebar": "materialSidebar"
+            },
+            {
+              "id": "/category/unit-13---electromagnetic-induction",
+              "path": "/docs/category/unit-13---electromagnetic-induction",
+              "sidebar": "materialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "materialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

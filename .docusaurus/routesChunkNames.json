@@ -1,0 +1,85 @@
+{
+  "/markdown-page-3d7": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/docs-a4d": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/docs-047": {
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
+  },
+  "/docs-fa1": {
+    "__comp": "a94703ab"
+  },
+  "/docs/category/unit-10---conductors-and-capacitors-79b": {
+    "__comp": "14eb3368",
+    "__props": "d395ebf6"
+  },
+  "/docs/category/unit-11---electric-circuits-f9e": {
+    "__comp": "14eb3368",
+    "__props": "b40230cf"
+  },
+  "/docs/category/unit-12---magnetic-fields-and-electromagnetism-147": {
+    "__comp": "14eb3368",
+    "__props": "7f83088f"
+  },
+  "/docs/category/unit-13---electromagnetic-induction-b03": {
+    "__comp": "14eb3368",
+    "__props": "cc2d7353"
+  },
+  "/docs/category/unit-8---electric-charges-fields-and-gausss-law-f29": {
+    "__comp": "14eb3368",
+    "__props": "c3b7046c"
+  },
+  "/docs/category/unit-9---electric-potential-3ea": {
+    "__comp": "14eb3368",
+    "__props": "118f4d81"
+  },
+  "/docs/intro-7c1": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/docs/Unit-10/Overview-1c9": {
+    "__comp": "17896441",
+    "content": "d7754580"
+  },
+  "/docs/Unit-11/Overview-125": {
+    "__comp": "17896441",
+    "content": "da08e57e"
+  },
+  "/docs/Unit-12/Overview-143": {
+    "__comp": "17896441",
+    "content": "430daf79"
+  },
+  "/docs/Unit-13/Overview-f25": {
+    "__comp": "17896441",
+    "content": "5d550eb2"
+  },
+  "/docs/Unit-8/8.1-coulomb-29b": {
+    "__comp": "17896441",
+    "content": "6cafae0a"
+  },
+  "/docs/Unit-8/Overview-1c6": {
+    "__comp": "17896441",
+    "content": "d571ec82"
+  },
+  "/docs/Unit-9/Overview-fe7": {
+    "__comp": "17896441",
+    "content": "e7729354"
+  },
+  "/-2e1": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}
