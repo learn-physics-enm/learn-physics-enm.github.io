@@ -2,6 +2,13 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## Using Docker
+
+The dockerfile and dockerignore files should be already set up. Go [here](https://docusaurus.community/knowledge/deployment/docker/?target=dev#building-the-docker-image) to learn how to build and run the image along with composing. 
+
+You don't need to go through the create and expose section unless something needs to be change (once again, it should all be set up).
+
+
 ## Installation
 
 ```bash
