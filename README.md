@@ -10,18 +10,17 @@ The dockerfile and dockerignore files should be already set up. Go [here](https:
 
 You don't need to go through the create and expose section unless something needs to be change (once again, it should all be set up).
 
-The version you pulled will be `dev`, not `serve` or `caddy` becuase the front-end doesn't need Docker for deployment. It's only used for development purposes.
+The version you pulled will be `serve`, not `dev` or `caddy`.
 
 ### Gimme the commands
 
 - `docker pull kinetekenergy/learn-physics-enm`
 - `docker build --target dev -t kinetekenergy/learn-physics-enm .`
-- `docker run --rm -d -p 3000:3000 -v $(pwd):/opt/docusaurus kinetekenergy/learn-physics-enm`
-  - If you're using PowerShell: `docker run --rm -d -p 3000:3000 -v ${pwd}:/opt/docusaurus kinetekenergy/learn-physics-enm`
+- `docker run --rm -d -p 3000:3000 kinetekenergy/learn-physics-enm`
 
 Using compose:
 
-- `docker compose --file ./dev.docker-compose.yml up -d --build`
+- `docker compose --file ./serve.docker-compose up -d --build`
 
 ## Installation
 
