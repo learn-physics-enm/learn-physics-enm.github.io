@@ -28,6 +28,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'learn-physics-enm', // Usually your GitHub org/user name.
+  deploymentBranch: 'gh-pages',
   projectName: 'learn-physics-enm.github.io', // Usually your repo name.
   trailingSlash: false,
   onBrokenLinks: 'throw',
