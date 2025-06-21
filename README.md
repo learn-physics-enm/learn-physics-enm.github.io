@@ -18,7 +18,7 @@ The dockerfile and dockerignore files should be already set up. Go [here](https:
 
 Using compose:
 
-- `docker compose --file ./serve.docker-compose up -d --build`
+- `docker compose --file ./serve.docker-compose.yml up -d --build`
 
 ## Installation
 
