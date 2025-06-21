@@ -6,19 +6,9 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 Pull the docker image using `docker pull kinetekenergy/learn-physics-enm`. You can view it [here](https://hub.docker.com/repository/docker/kinetekenergy/learn-physics-enm/general) on DockerHub. The version you pulled will be `serve`, not `dev` or `caddy`.
 
-The dockerfile and dockerignore files should be already set up. Go [here](https://docusaurus.community/knowledge/deployment/docker/?target=dev#building-the-docker-image) to learn how to build and run the image along with composing. Remember, it's **serve**. You don't need to go through the create and expose section unless something needs to be change (once again, it should all be set up).
-
-
-### Gimme the commands
-
-- `docker pull kinetekenergy/learn-physics-enm`
-- `docker build --target serve -t kinetekenergy/learn-physics-enm .`
-- `docker run --rm -d -p 3000:3000 kinetekenergy/learn-physics-enm`
+- `docker compose up --build`
 - Go to `http://localhost:3000/` in your browser to see the site.
-
-Using compose:
-
-- `docker compose --file ./serve.docker-compose.yml up -d --build`
+- Changes made to docs should update instantly
 
 ## Installation
 
