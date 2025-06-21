@@ -4,11 +4,10 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## Using Docker
 
-Pull the docker image using `docker pull kinetekenergy/learn-physics-enm`. You can view it [here](https://hub.docker.com/repository/docker/kinetekenergy/learn-physics-enm/general) on DockerHub. The version you pulled will be `serve`, not `dev` or `caddy`.
-
-- `docker compose up --build`
-- Go to `http://localhost:3000/` in your browser to see the site.
-- Changes made to docs should update instantly
+1. Pull the docker image using `docker pull kinetekenergy/learn-physics-enm:latest`. You can view it [here](https://hub.docker.com/repository/docker/kinetekenergy/learn-physics-enm/general) on DockerHub.
+2. Run `docker compose up --build` to start the site.
+3. Go to `http://localhost:3000/` in your browser to see the site.
+4. Changes made to docs should update instantly
 
 ## Installation
 
