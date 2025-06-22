@@ -18,4 +18,4 @@ Note: the first unit does not start at one since E&M is actually the second half
 
 ## Suggest a Change
 
-We make mistakes too! If something is incorrect or you simply want to suggest content to add, contact us at  **email goes here**.
+We make mistakes too! If something is incorrect or you simply want to suggest content to add, contact us at **email goes here**.

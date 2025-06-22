@@ -2,6 +2,18 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+**Important:** do NOT touch any files in the `build` folder. You must write your documentation in the `docs` folder.
+**Important:** do NOT modify the `node_modules` folder and do NOT remove it from the `.gitignore`.
+**Important:** do NOT modify any docker related filed.
+
+Want to add custom assets? Add it in the corresponding unit folder or add it in the `static` folder for site-wide access. For example, files for Latex support have been added there.
+
+Want the change the style of something? Go to the `src/css/custom.css` folder. If you want to change the site's info, modify the configuration files there OR change the `docusaurus.config.js` in the root directory.
+
+When developing a table, use [this website](https://www.tablesgenerator.com/markdown_tables).
+
+When making latex, use [this website](https://latexeditor.lagrida.com/).
+
 ## Using Docker
 
 1. Pull the docker image using `docker pull kinetekenergy/learn-physics-enm:latest`. You can view it [here](https://hub.docker.com/repository/docker/kinetekenergy/learn-physics-enm/general) on DockerHub.
@@ -48,6 +60,6 @@ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
-### Design
+## Design
 
 Our color scheme comes from [Google's Material 3](https://m3.material.io/styles/color/static/baseline).
