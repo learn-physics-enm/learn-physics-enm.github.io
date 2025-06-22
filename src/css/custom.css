@@ -17,6 +17,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --transparent: rgba(0, 0, 0, 0);
 
+  --border-radius-large: 25px;
+  --border-radius: 10px;
+
   /* specifically for hero */
   --hero-button-bg: #EADDFF;
   --hero-button-text: #4F378B;
@@ -44,7 +47,7 @@
 
 .heroBanner_qdFl {
   margin: 25px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-large);
   color: var(--hero-header-text);
 }
 
@@ -61,4 +64,9 @@
 
 .hero__link:hover {
   border-color: var(--transparent);
+}
+
+.img_ev3q {
+  max-width: 35vh;
+  border-radius: var(--border-radius);
 }
