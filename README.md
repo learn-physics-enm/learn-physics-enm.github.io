@@ -2,6 +2,14 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## Using Docker
+
+1. Pull the docker image using `docker pull kinetekenergy/learn-physics-enm:latest`. You can view it [here](https://hub.docker.com/repository/docker/kinetekenergy/learn-physics-enm/general) on DockerHub.
+2. Run `docker compose up --build` to start the site.
+   1. Run `docker compose down` to stop the site.
+3. Go to `http://localhost:3000/` in your browser to see the site.
+4. Changes made to docs should update instantly
+
 ## Installation
 
 ```bash

@@ -77,7 +77,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'materialSidebar',
             position: 'left',
-            label: 'Material',
+            label: 'Course Content',
           },
         ],
       },
