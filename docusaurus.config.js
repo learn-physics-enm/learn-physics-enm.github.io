@@ -75,7 +75,7 @@ const config = {
                 title: 'Learn Physics E&M',
                 logo: {
                     alt: 'Default Logo',
-                    src: 'img/logo.svg',
+                    src: 'img/atom.jpg',
                 },
                 items: [
                     {

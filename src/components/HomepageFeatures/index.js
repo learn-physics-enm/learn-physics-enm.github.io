@@ -3,61 +3,64 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
-    title: 'Hey there!',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Go to <code>src\components\HomepageFeatures\index.js</code> to change this text.
-        You can also change the descriptions and the svg images (the images above).
-      </>
-    ),
-  },
-  {
-    title: 'Swag title goes here',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        It might be <code>src/components/HomepageFeatures/index.js</code> on non Windows systems.
-        Either way, the file should be named <code>index.js</code>.
-      </>
-    ),
-  },
-  {
-    title: 'I can\'t think of a funny joke here',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        You could also probably <code>Ctrl + F</code> for this text or find <code>index.js</code>.
-      </>
-    ),
-  },
+    {
+        title: 'By students, for students.',
+        imgSrc: require('@site/static/img/help.png').default, // Add .default for webpack to get URL
+        description: (
+            <>
+                We know physics can be confusing — so we made this site to make it make sense. 
+                Here you'll find easy-to-understand lessons and resources all about electricity and magnetism, 
+                written by students just like you. 
+            </>
+        ),
+    },
+    {
+        title: 'Full of useful resources.',
+        imgSrc: require('@site/static/img/resources.png').default,
+        description: (
+            <>
+                
+                From explanations and practice questions to videos and formula sheets — 
+                everything you need to tackle electricity and magnetism is right here. 
+                Feel free to use whatever you need.
+            </>
+        ),
+    },
+    {
+        title: 'I can\'t think of a funny joke here',
+        imgSrc: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        description: (
+            <>
+                You could also probably <code>Ctrl + F</code> for this text or find <code>index.js</code>.
+            </>
+        ),
+    },
 ];
 
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
+function Feature({ imgSrc, title, description }) {
+    return (
+        <div className={clsx('col col--4')}>
+            <div className="text--center">
+                <img className={styles.featureSvg} src={imgSrc} alt={title} />
+            </div>
+            <div className="text--center padding-horiz--md">
+                <Heading as="h3">{title}</Heading>
+                <p className="text--justify">{description}</p>
+            </div>
+        </div>
+    );
 }
 
 export default function HomepageFeatures() {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section className={styles.features}>
+            <div className="container">
+                <div className="row">
+                    {FeatureList.map((props, idx) => (
+                        <Feature key={idx} {...props} />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }
