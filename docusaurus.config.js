@@ -95,4 +95,12 @@ const config = {
         }),
 };
 
+// add katex stylesheet for latex rendering
+config.stylesheets = [
+    {
+        href: 'static/katex.min.css',
+        type: 'text/css',
+    },
+];
+
 export default config;

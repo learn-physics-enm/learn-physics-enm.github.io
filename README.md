@@ -47,3 +47,7 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Design
+
+Our color scheme comes from [Google's Material 3](https://m3.material.io/styles/color/static/baseline).
