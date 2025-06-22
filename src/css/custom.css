@@ -20,8 +20,7 @@
     --border-radius-large: 25px;
     --border-radius: 10px;
 
-    /* specifically for hero */
-    --hero-button-bg: #EADDFF;
+    --primary-container: #EADDFF;
     --hero-button-text: #4F378B;
     --hero-header-text: #FFFFFF;
 
@@ -38,8 +37,7 @@
     --ifm-color-primary-lightest: #4fddbf;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
-    /* specifically for hero */
-    --hero-button-bg: #4F378B;
+    --primary-container: #4F378B;
     --hero-button-text: #EADDFF;
     --hero-header-text: #381E72;
 }
@@ -60,7 +58,7 @@
 .hero__link {
     display: inline-block;
     border-color: var(--transparent);
-    background-color: var(--hero-button-bg);
+    background-color: var(--primary-container);
 }
 
 .hero__link:hover {
@@ -81,4 +79,8 @@
 
 iframe {
     border-radius: var(--border-radius);
+}
+
+.pagination-nav__link {
+    background-color: var(--primary-container);
 }
