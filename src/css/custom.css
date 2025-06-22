@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #6750A4;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -15,11 +15,18 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --transparent: rgba(0, 0, 0, 0);
+
+  /* specifically for hero */
+  --hero-button-bg: #EADDFF;
+  --hero-button-text: #4F378B;
+  --hero-header-text: #FFFFFF;
+  
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #D0BCFF;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -27,4 +34,31 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hero-button-bg: #4F378B;
+  --hero-button-text: #EADDFF;
+  --hero-header-text: #381E72;
+
+  /* hero title text */
+  --ifm-hero-text-color: #381E72 !important;
+}
+
+.heroBanner_qdFl {
+  margin: 25px;
+  border-radius: 10px;
+  color: var(--hero-header-text);
+}
+
+.hero__button {
+  color: var(--hero-button-text);
+  font-weight: 1000;
+}
+
+.hero__link {
+  display: inline-block;
+  border-color: var(--transparent);
+  background-color: var(--hero-button-bg);
+}
+
+.hero__link:hover {
+  border-color: var(--transparent);
 }
