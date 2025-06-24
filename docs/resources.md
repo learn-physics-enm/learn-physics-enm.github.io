@@ -9,7 +9,7 @@ A compilation of useful resources that don't pertain to a specific unit.
 ## Courses and Books
 
 - [Serway and Jewett - Physics for Scientists and Engineers 6th Edition](physics_serway.pdf)
-  - [Online Link](https://faculty.ksu.edu.sa/sites/default/files/physics_serway.pdf)
+  - [Alternative Link](https://faculty.ksu.edu.sa/sites/default/files/physics_serway.pdf)
 - [NJCTL AP Physics C E&M course](https://njctl.org/materials/courses/ap-physics-c-electricity-magnetism/)
 
 ## Practice Problems
