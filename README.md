@@ -10,9 +10,15 @@ Want to add custom assets? Add it in the corresponding unit folder or add it in 
 
 Want the change the style of something? Go to the `src/css/custom.css` folder. If you want to change the site's info, modify the configuration files there OR change the `docusaurus.config.js` in the root directory.
 
-When developing a table, use [this website](https://www.tablesgenerator.com/markdown_tables).
-
-When making latex, use [this website](https://latexeditor.lagrida.com/).
+- When developing a table, use [this website](https://www.tablesgenerator.com/markdown_tables).
+- When making latex, use [this website](https://latexeditor.lagrida.com/).
+- When making a diagram, use [this website](https://drive.google.com/file/d/1L6r8jAqQatDtlMlTHIBmHaUcrfzt4tAQ/view?usp=sharing).
+  - **Important:** Follow these instructions below to make sure your diagram is exported properly:
+    - At the top right, click File > Export as > SVG
+    - Set Zoom to 100%, enable Transparent Background, set Appearance to Automatic. Keep everything else as default.
+    - Select Export
+    - You can set your file name here. Set Where to Download. This saves it locally to your computer.
+    - Drag the SVG file to the site files and place it where you need it to be.
 
 ## Using Docker
 
