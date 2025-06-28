@@ -66,11 +66,17 @@ const config = {
         ],
     ],
 
+    plugins: [
+        'plugin-image-zoom'
+    ],
+
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             // Replace with your project's social card
             image: 'img/docusaurus-social-card.jpg',
+            
+            // navbar settings
             navbar: {
                 title: 'Learn Physics E&M',
                 logo: {
@@ -87,13 +93,33 @@ const config = {
                     },
                 ],
             },
+            
+            // add a footer
             footer: {
+                // code here
             },
+            
             prism: {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
             },
+            
+            // when clicking on an image, it zooms
+            imageZoom: {
+                // CSS selector to apply the plugin to, defaults to '.markdown img'
+                selector: '.markdown img',
+                // Optional medium-zoom options
+                // see: https://www.npmjs.com/package/medium-zoom#options
+                options: {
+                    margin: 24,
+                    background: '#BADA55',
+                    scrollOffset: 0,
+                    container: '#zoom-container',
+                    template: '#zoom-template',
+                },
+            },
         }),
+    
 };
 
 // add katex stylesheet for latex rendering
