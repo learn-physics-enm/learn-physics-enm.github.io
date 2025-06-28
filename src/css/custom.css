@@ -79,10 +79,16 @@
     display: none;
 }
 
+/* video previews have rounded corners */
 iframe {
     border-radius: var(--border-radius);
 }
 
 .pagination-nav__link {
     background-color: var(--primary-container);
+}
+
+/* when clicking on an image, it will blur the background */
+.medium-zoom-overlay {
+    backdrop-filter: blur(5px) !important;
 }
