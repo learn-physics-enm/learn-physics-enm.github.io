@@ -27,11 +27,11 @@ const FeatureList = [
         ),
     },
     {
-        title: 'I can\'t think of a funny joke here',
-        imgSrc: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        title: 'E&M Might Be About Electric Type Pokémon',
+        imgSrc: require('@site/static/img/pokemon-minun-and-plusle-pack.png').default,
         description: (
             <>
-                You could also probably <code>Ctrl + F</code> for this text or find <code>index.js</code>.
+                In the year 2040, the 3rd FRQ of the AP Physics E&M exam will be about Pikachu and other electric type Pokémon.
             </>
         ),
     },

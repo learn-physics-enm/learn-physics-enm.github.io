@@ -14,7 +14,7 @@ import rehypeKatex from 'rehype-katex';
 const config = {
     title: 'Learn Physics E&M',
     tagline: 'A comprehensive AP Physics E&M guide by DNHS students — for DNHS and students everywhere.',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon2.ico',
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
     future: {
@@ -75,7 +75,8 @@ const config = {
                 title: 'Learn Physics E&M',
                 logo: {
                     alt: 'Default Logo',
-                    src: 'img/logo2.png',
+                    src: 'img/logo-dynamic-light.png',
+                    srcDark: 'img/logo-dynamic.png',
                 },
                 items: [
                     {
