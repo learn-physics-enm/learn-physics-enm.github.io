@@ -16,6 +16,10 @@ Use the navigation pane on the left hand side to go through the physics topics. 
 
 Note: the first unit does not start at one since E&M is actually the second half of the AP Physics course. Units 1 through 7 are AP Mechanics. If you're looking for resources on that, we suggest [crashwhite.com](https://www.crashwhite.com/apphysics/faqs.html).
 
+### "I can't see an image" / "This image is too small!"
+
+You can click on any image in the website and it will present a zoomed-in view, allowing you to see it better.
+
 ## Suggest a Change
 
 We make mistakes too! If something is incorrect or you simply want to suggest content to add, contact us at **email goes here**.
