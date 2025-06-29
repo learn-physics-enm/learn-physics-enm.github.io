@@ -22,7 +22,6 @@ const FeatureList = [
         imgSrcDark: require('@site/static/img/equation-dark.png').default,
         description: (
             <>
-                
                 From explanations and practice questions to videos and formula sheets — 
                 everything you need to tackle electricity and magnetism is right here. 
                 Feel free to use whatever you need.
@@ -35,7 +34,7 @@ const FeatureList = [
         imgSrcDark: require('@site/static/img/circuit-dark.png').default,
         description: (
             <>
-                This site is brought to you by Shuban Pal, Aashray Reddy, and Trevor Huang. We are committed to keeping it up-to-date and useful. Please feel free to reach out to us with any questions, suggestions, or feedback.
+                This site is developed and managed by Shuban Pal, Aashray Reddy, and Trevor Huang. We are committed to keeping it up-to-date and useful. Please feel free to reach out to us with any questions, suggestions, or feedback.
             </>
         ),
     },
