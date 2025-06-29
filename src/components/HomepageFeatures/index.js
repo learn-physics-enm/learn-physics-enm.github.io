@@ -30,12 +30,12 @@ const FeatureList = [
         ),
     },
     {
-        title: 'E&M Might Be About Electric Type Pokémon',
+        title: 'Active support and infrastructure.',
         imgSrc: require('@site/static/img/circuit-light.png').default,
         imgSrcDark: require('@site/static/img/circuit-dark.png').default,
         description: (
             <>
-                In the year 2040, the 3rd FRQ of the AP Physics E&M exam will be about Pikachu and other electric type Pokémon.
+                This site is brought to you by Shuban Pal, Aashray Reddy, and Trevor Huang. We are committed to keeping it up-to-date and useful. Please feel free to reach out to us with any questions, suggestions, or feedback.
             </>
         ),
     },
