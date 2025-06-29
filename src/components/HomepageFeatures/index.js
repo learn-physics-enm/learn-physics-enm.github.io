@@ -1,11 +1,13 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { useColorMode } from '@docusaurus/theme-common';
 
 const FeatureList = [
     {
         title: 'By students, for students.',
-        imgSrc: require('@site/static/img/help.png').default, // Add .default for webpack to get URL
+        imgSrc: require('@site/static/img/helping-light.png').default, // Add .default for webpack to get URL
+        imgSrcDark: require('@site/static/img/helping-dark.png').default,
         description: (
             <>
                 We know physics can be confusing — so we made this site to make it make sense. 
@@ -16,7 +18,8 @@ const FeatureList = [
     },
     {
         title: 'Full of useful resources.',
-        imgSrc: require('@site/static/img/resources.png').default,
+        imgSrc: require('@site/static/img/equation-light.png').default,
+        imgSrcDark: require('@site/static/img/equation-dark.png').default,
         description: (
             <>
                 
@@ -28,7 +31,8 @@ const FeatureList = [
     },
     {
         title: 'E&M Might Be About Electric Type Pokémon',
-        imgSrc: require('@site/static/img/pokemon-minun-and-plusle-pack.png').default,
+        imgSrc: require('@site/static/img/circuit-light.png').default,
+        imgSrcDark: require('@site/static/img/circuit-dark.png').default,
         description: (
             <>
                 In the year 2040, the 3rd FRQ of the AP Physics E&M exam will be about Pikachu and other electric type Pokémon.
@@ -37,11 +41,14 @@ const FeatureList = [
     },
 ];
 
-function Feature({ imgSrc, title, description }) {
+function Feature({ imgSrc, imgSrcDark, title, description }) {
+    const { colorMode } = useColorMode();
+    const image = colorMode === 'dark' ? imgSrcDark : imgSrc;
+
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
-                <img className={styles.featureSvg} src={imgSrc} alt={title} />
+                <img className={styles.featureSvg} src={image} alt={title} />
             </div>
             <div className="text--center padding-horiz--md">
                 <Heading as="h3">{title}</Heading>
