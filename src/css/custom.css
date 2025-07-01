@@ -92,3 +92,9 @@ iframe {
 .medium-zoom-overlay {
     backdrop-filter: blur(5px) !important;
 }
+
+/* justify text and auto hyphenate */
+p {
+    text-align: justify;
+    hyphens: auto;
+}
