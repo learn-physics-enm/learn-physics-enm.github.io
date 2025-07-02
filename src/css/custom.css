@@ -24,7 +24,7 @@
     --primary-container: #EADDFF;
     --hero-button-text: #4F378B;
     --hero-header-text: #FFFFFF;
-
+    --sidebar-tint: rgba(255, 255, 255, 1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -42,6 +42,7 @@
     --primary-container: #4A4458;
     --hero-button-text: #EADDFF;
     --hero-header-text: #381E72;
+    --sidebar-tint: rgba(36, 37, 38, 0.5);
 }
 
 /* configuration for the home banner */
@@ -97,4 +98,15 @@ iframe {
 p {
     text-align: justify;
     hyphens: auto;
+}
+
+/* on dark mode, the navigation pane to the left has a glass effect for mobile */
+.theme-layout-navbar-sidebar.navbar-sidebar {
+    background: var(--sidebar-tint);
+    backdrop-filter: blur(15px);
+}
+
+/* makes the padding even for the navigation pane */
+.menu.thin-scrollbar.menu_SIkG {
+    padding-right: 8px;
 }
