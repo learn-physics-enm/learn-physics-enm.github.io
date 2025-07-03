@@ -28,6 +28,8 @@ Want the change the style of something? Go to the `src/css/custom.css` folder. I
 3. Go to `http://localhost:3000/` in your browser to see the site.
 4. Changes made to docs should update instantly
 
+Note: when building the site, docusaurus will give unsupported file type errors for the SVGs. Ignore them.
+
 ## Installation
 
 ```bash
