@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Overview
 
-### Module 8.1
+### Unit 8.1
 
 * Electrical charge
   * Negative and positive charge
@@ -17,13 +17,13 @@ sidebar_position: 1
   * Conductors and insulators
   * Charging objects by induction
 
-### Module 8.2
+### Unit 8.2
 
 * Coulomb's Law
   * Coulomb's Law equation and constant
   * Electrostatic forces
 
-### Module 8.3
+### Unit 8.3
 
 * Electric Fields
   * Electric Field equation and vector calculations
@@ -33,14 +33,29 @@ sidebar_position: 1
   * Calculating electric fields through calculus
   * Values needed for electric field integration
 
-### Module 8.4
+### Unit 8.4
 
 * Electric Field Lines
   * Drawing electric field lines
   * Rules and purpose behind line representations of electric fields
 
-### Module 8.5
+### Unit 8.5
 
-* Motion Under Electric Fields
+* Motion of Charged Particles in an Electric Field
   * Acceleration in an electric field
   * Mechanics in Context to Electricity and Magnetism
+
+### Unit 8.6
+
+* Electric Flux
+  * Explanation of what electric flux is
+  * Calculating flux
+* Gauss's Law
+  * Definition and equation of Gauss's Law
+  * How one can use Gauss's Law to calculate electric flux
+
+### Unit 8.7
+
+* Applications of Gauss's Law
+  * How Gauss's Law is used in continuous charge distributions
+  * Gauss's Law in electrostatic equilibrium
