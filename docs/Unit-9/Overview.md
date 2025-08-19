@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Unit 9 - Overview
@@ -18,8 +18,10 @@ sidebar_position: 2
 ### Module 9.2
 
 * Electric Potential Due to Continuous Charge Distributions
+    * Electric potential in the context of continuous charged objects
 
-* Electric Potential 
+* Electric Potential Due to Charged Conductor
+    * Electric potential in the context of charged conductors
 
 ### Module 9.3
 
