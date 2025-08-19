@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+    "name": "Learn Physics ENM Website (Node.js & Docusaurus)",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": { },
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [
+        3000
+    ],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "postAttachCommand": "bash .devcontainer/post-attatch.sh",
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                // markdown stuff
+                "stylelint.vscode-stylelint",
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                // intellicode
+                "VisualStudioExptTeam.vscodeintellicode",
+                "VisualStudioExptTeam.vscodeintellicode-completions",
+                "ecmel.vscode-html-css",
+                "christian-kohler.npm-intellisense",
+                "Zignd.html-css-class-completion",
+                "leizongmin.node-module-intellisense"
+            ]
+        }
+    }
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+    // environment variables (NOT a .env)
+    // "remoteEnv": {
+    //     "USE_SSH": "true",
+    //     "GIT_USER": "kinetekenergy"
+    //     // "GIT_PASS": "[redacted] - stored in .env"
+    // }
+}
