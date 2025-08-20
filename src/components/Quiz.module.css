@@ -32,6 +32,21 @@
     cursor: pointer;
 }
 
+.buttonRow {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.showAnswerBtn {
+    background: #f59e0b;
+    /* amber */
+}
+
+.showAnswerBtn:hover {
+    background: #d97706;
+}
+
 .button:disabled {
     background: #9ca3af;
     cursor: not-allowed;
@@ -39,6 +54,7 @@
 
 .feedback {
     margin-top: 0.75rem;
+    margin-bottom: 0rem;
     font-weight: 500;
 }
 
@@ -47,5 +63,5 @@
 }
 
 .incorrect {
-    color: #dc2626;
+    color: white;
 }
