@@ -137,12 +137,7 @@ def update_markdown_contents(root: Path, orig_to_final: dict, major: int, insert
         if m:
             minor_set.add(int(m.group(1)))
     minors_to_change = sorted([m for m in minor_set if m >= insert_minor], reverse=True)
-    repl_pairs = [(f"{major}.{m}", f"{major}.{m+1}") for m in minors_to_change]
-
-    
-    
-    
-    
+    repl_pairs = [(f"{major}.{m}", f"{major}.{m+1}") for m in minors_to_change]  
 
     token_patterns = [(re.compile(rf'(?<!\d){re.escape(old)}(?!\d)'), new) for old, new in repl_pairs]
     img_patterns = [(re.compile(re.escape(old) + r'(?=[_\-\/])'), new) for old, new in repl_pairs]
