@@ -1,4 +1,3 @@
-sudo apt-get update -y
-sudo apt-get upgrade -y
+#!/bin/bash
 
-npm install
+sudo apt-get update -y && sudo apt-get upgrade -y && npm install
