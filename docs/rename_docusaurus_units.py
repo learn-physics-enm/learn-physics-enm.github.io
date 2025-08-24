@@ -126,20 +126,23 @@ def two_step_rename(orig_to_final, dry_run=False):
         temp.rename(final)
     return final_ops
 
-def update_markdown_contents(root: Path, major: int, insert_minor: int, sidebar_threshold: int, dry_run=False):
+def update_markdown_contents(root: Path, orig_to_final: dict, major: int, insert_minor: int, sidebar_threshold: int, dry_run=False):
     md_exts = {'.md', '.mdx', '.markdown', '.mdown'}
-    number_token_pattern = re.compile(rf'(?<!\d)({major})\.(\d+)(?!\d)')
-    minors_found = set()
-    for p in root.rglob('*'):
-        if p.suffix.lower() in md_exts:
-            try:
-                text = p.read_text(encoding='utf-8', errors='ignore')
-            except Exception:
-                continue
-            for m in number_token_pattern.finditer(text):
-                minors_found.add(int(m.group(2)))
-    minors_to_change = sorted([m for m in minors_found if m >= insert_minor], reverse=True)
+    # Build repl_pairs deterministically from the planned filesystem renames (orig_to_final)
+    # so markdown updates exactly match what was renamed on disk.
+    pattern_name = re.compile(rf'^{re.escape(str(major))}\.(\d+)')
+    minor_set = set()
+    for orig_path in orig_to_final.keys():
+        m = pattern_name.match(orig_path.name)
+        if m:
+            minor_set.add(int(m.group(1)))
+    minors_to_change = sorted([m for m in minor_set if m >= insert_minor], reverse=True)
     repl_pairs = [(f"{major}.{m}", f"{major}.{m+1}") for m in minors_to_change]
+
+    
+    
+    
+    
 
     token_patterns = [(re.compile(rf'(?<!\d){re.escape(old)}(?!\d)'), new) for old, new in repl_pairs]
     img_patterns = [(re.compile(re.escape(old) + r'(?=[_\-\/])'), new) for old, new in repl_pairs]
@@ -266,7 +269,7 @@ def main():
         # still show planned temp & final sequences via two_step_rename(dry_run=True)
         two_step_rename(orig_to_final, dry_run=True)
         print("\nPlanned content edits (markdown):")
-        changed_files = update_markdown_contents(docs_root, args.major, args.insert_minor, sidebar_threshold, dry_run=True)
+        changed_files = update_markdown_contents(docs_root, orig_to_final, args.major, args.insert_minor, sidebar_threshold, dry_run=True)
         print(f"  Markdown files that would be changed: {len(changed_files)}")
         return
 
@@ -274,7 +277,7 @@ def main():
     two_step_rename(orig_to_final, dry_run=False)
 
     # After renames, update markdown files to reflect new numbering
-    changed_files = update_markdown_contents(docs_root, args.major, args.insert_minor, sidebar_threshold, dry_run=False)
+    changed_files = update_markdown_contents(docs_root, orig_to_final, args.major, args.insert_minor, sidebar_threshold, dry_run=False)
     print(f"Completed. Markdown files modified: {len(changed_files)}")
 
 if __name__ == '__main__':
