@@ -80,6 +80,12 @@
     display: none;
 }
 
+/* latex is larger */
+.mjx-chtml {
+    font-size: 1.5em !important;
+    /* Adjust value as needed */
+}
+
 /* video previews have rounded corners */
 iframe {
     border-radius: var(--border-radius);
