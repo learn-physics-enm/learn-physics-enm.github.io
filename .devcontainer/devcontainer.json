@@ -11,8 +11,8 @@
         3000
     ],
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "bash .devcontainer/post-create.sh",
-    "postAttachCommand": "bash .devcontainer/post-attatch.sh",
+    "postCreateCommand": "sudo apt-get update -y && sudo apt-get upgrade -y && npm install",
+    "postAttachCommand": "npm run start",
     // Configure tool-specific properties.
     "customizations": {
         "vscode": {
